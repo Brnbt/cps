@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    background: linear-gradient(45deg, #4a0712, #A5001D); /* Dégradé du rouge au rouge foncé */
+    color: #ffffff; /* Texte en blanc pour contraste */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,89 +13,95 @@ body {
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #C8102E;
+    color: #ffffff; /* Titre en blanc pour contraste */
 }
 
 p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 button {
-    background-color: #333333;
+    background-color: #8B0018; /* Harmonisation du fond des formulaires */
     color: #ffffff;
     padding: 200px;
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     border: none;
     font-size: 1em;
     margin: 10px;
     width: 98%;
-
+    transition: all 0.4 ease ;
 }
 
 button:hover {
-    background-color: #444444;
+    background-color: #580412; /* Harmonisation du fond des formulaires */
+    transition: all 0.4 ease ;
+
 }
 
 .formMiniBox, .form {
-    
-    background-color: #1E1E1E;
-    border: 1px solid #333333;
+    background-color: #A5001D; /* Harmonisation du fond des formulaires */
+    border: 1px solid #8B0018; /* Bordures adaptées */
     width: 60%;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
 }
 
-.formMiniBox{
+.formMiniBox {
     display: flex;
     justify-content: space-around;
 }
 
 #numero, #message {
-    background-color: #333333;
+    background-color: #8B0018; /* Fond des champs harmonisé */
     padding: 15px;
-    border: 1px solid #444444;
     border-radius: 5px;
     width: calc(100% - 32px);
     margin: 10px 0;
-    color: #e0e0e0;
+    color: #ffffff; /* Texte en blanc pour contraste */
 }
 
-#link {
-    color: #C8102E;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: 40px;
+#linka, #linkb {
     transition: color 0.3s ease;
     display: none;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffffff; /* Fond blanc pour contraste */
+    width: 15%;
+    margin: auto;
 }
 
-#link:hover {
-    color: #A5001D;
+#linka a, #linkb a {
+    text-decoration: none;
+    color: #C8102E; /* Texte rouge pour harmonie avec le fond */
+}
+
+#linka:hover, #linkb:hover {
+    color: #8B0018; /* Couleur au survol harmonisée */
 }
 
 #secondes {
     border: none;
-    background-color: #C8102E;
-    color: #ffffff;
+    background-color: #ffffff; /* Fond blanc pour contraste */
+    color: #C8102E; /* Texte rouge pour harmonie */
     padding: 15px;
     border-radius: 15px;
     display: flex;
-    margin: 20px auto;
     width: 15%;
+    margin: auto;
     text-align: center;
 }
+
 .logo {
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-#logo{
+#logo {
     height: 100px;
-
 }
